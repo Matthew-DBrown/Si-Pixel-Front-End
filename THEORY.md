@@ -24,5 +24,5 @@ The front-end pulse shaper is needed to take the sharp output and transform the 
 
 Before designing the circuitry, a representation of the output from the diode (current pulse) to the front-end must be established. The depletion width of a diode essentially contructs a capacitor system and so the output of the diode is expected to decay with an exponential waveform. Similar waveforms can be seen in other detector systems, such as the pulses from the anode in photomultiplier tubes. In reality, there is also a rise time to the pulse before the exponential decay commences which slightly reduces the sharpness of the pulse output from the diode. Considering all these factors, the following waveform may be considered appropriate,
 
-$$ V_{in}(t) = A\left\{\exp\left(-\frac{t}{\tau_1}\right) - \exp\left(-\frac{t}{\tau_2}\right)\right\}. $$
+$ V_{in}(t) = A\left\{\exp\left(-\frac{t}{\tau_1}\right) - \exp\left(-\frac{t}{\tau_2}\right)\right\}. $
 
