@@ -12,9 +12,9 @@ A depletion width is seen in traditional CMOS technology used in advanced partic
 
 The schematic below simply illustrates how a charged particle passing through the depletion region generates electron-hole pairs through the ionisation of electrons to the conduction band. A detectable current is achieved that is short in duration due to the small size of the system.
 
-![Detection_schematic image](./Images/nmos_sedra.png)
+![Detection_schematic image](./Images/particle_cmos.png)
 
 ## The Front-End 
 
-The front-end pulse shaper is needed to take the sharp output and 
+The front-end pulse shaper is needed to take the sharp output and transform the waveform into something measrable by a counter at the end which may, for example, detect the rising and falling edges of digital signals.
 
