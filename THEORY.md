@@ -57,12 +57,17 @@ omission [^6].
 
 ## Footnotes
 [^1]: Knoll GF. Radiation detection and measurement. John Wiley & Sons; 2010.
+
 [^2]: Khilkevitch EM, Shevelev AE, Chugunov IN, Iliasova MV, Doinikov DN, Gin DB, et al.
+
 [^3]: Horowitz P, Hill W, Robinson I. The art of electronics. vol. 2. Cambridge university press
 Cambridge; 1989.
+
 [^4]: LM741 data sheet, product information and support | TI.com; 2024. (Online; accessed 14.
 Mar. 2024). Available from: https://www.ti.com/product/LM741.
+
 [^5]: LMH6611 data sheet, product information and support | TI.com; 2024. (Online; accessed
 14. Mar. 2024). Available from: https://www.ti.com/product/LMH6611.
+
 [^6]: OPA818 data sheet, product information and support | TI.com; 2024. (Online; accessed
 14. Mar. 2024). Available from: https://www.ti.com/product/OPA818.
