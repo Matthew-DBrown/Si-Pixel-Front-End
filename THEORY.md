@@ -16,5 +16,6 @@ The schematic below simply illustrates how a charged particle passing through th
 
 ## The Front-End 
 
-The front-end pulse shaper is needed to take the sharp output and transform the waveform into something measrable by a counter at the end which may, for example, detect the rising and falling edges of digital signals.
+The front-end pulse shaper is needed to take the sharp output and transform the waveform into something measrable by a counter at the end which may, for example, detect the rising and falling edges of digital signals. The fundamentals of what the front-end should do is shown in 'Semiconductor Detector Systems' by Helmuth Spieler with the bassic schematic outline illustrated below.
 
+![Detection_schematic image](./Images/spieler_schem.png)
