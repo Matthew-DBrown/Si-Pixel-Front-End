@@ -34,6 +34,9 @@ practical since the maximum amplitude is sharp and short in duration after intro
 tail to the step input from the integrator. A low-pass filter is therefore introduced, with the
 same time constant as the high-pass filter; the outputs of these stages are illustrated below along with their Fourier transforms. 
 
+| ![Simulated output voltage signals for the first three stages of the design](./Images/.png) |
+|:--:| 
+| *Space* |
 
 
 
