@@ -32,13 +32,19 @@ the integration time is negligible [^1]. The integrator’s capacitor must fully
 For the same reasons discussed in the theory section, the profile of the high-pass filter output is not
 practical since the maximum amplitude is sharp and short in duration after introducing a decay
 tail to the step input from the integrator. A low-pass filter is therefore introduced, with the
-same time constant as the high-pass filter; the outputs of these stages are illustrated below along with their Fourier transforms. 
+same time constant as the high-pass filter; these stages in addition to their outputs are illustrated below along with their Fourier transforms. 
 
-| ![Simulated output voltage signals for the first three stages of the design](./Images/.png) |
+| ![Schematic of the first three components; the integrator, CR filter and RC filter.](./Images/first_three_new.png) |
 |:--:| 
-| *Space* |
+| KiCad schematic design of the first three components; the integrator, CR filter and the RC filter. |
 
+| ![Simulated output voltage signals for the first three stages of the design](./Images/first_three_outputs2.png) |
+|:--:| 
+| Simulated output voltage signals for the first three stages of the design. The discharge of the integrator is slow, and its output appears step-like on the time scale of the input pulse. The CR filter sets the pulse width. |
 
+| ![Fourier transforms of the outputs of the CR and RC filters](./Images/freq_spectra_cr_rc2.png) |
+|:--:| 
+| Frequency spectra of the CR and RC filter outputs of the figure above. A larger dominance of lower frequency components is seen after passing through the low-pass, RC filter, broadening the sharp pulse outputted from the CR filter. |
 
 As expected, the CR filter output has high frequency
 components due to its sharp nature. These components are attenuated by the RC filter, where
@@ -46,9 +52,11 @@ their relative magnitudes drop by several orders at frequencies above 10 MHz, wh
 frequency components are mostly unaffected and hence their more dominant contribution. It
 is for these reason that the output becomes more smooth, since the reduced noise bandwidth
 in the frequency domain results in an increased pulse width in the time domain from Fourier
-theory [36]. This further results in high frequency noise mixtures being attenuated early in the
+theory [^2]. This further results in high frequency noise mixtures being attenuated early in the
 circuit before propagating to the final output.
 ## Footnotes
 
 [^1]: Shenkman AL. Transient analysis of electric power circuits handbook. Springer Science &
 Business Media; 2006.
+
+[^2]: Hoffman F. An introduction to Fourier theory. Extraído el. 1997;2.
