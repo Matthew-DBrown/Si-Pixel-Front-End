@@ -49,9 +49,9 @@ phase shifts occur beyond this frequency, outside the ideal operating parameters
 [^3]. This along with other phenomena introduce a slew rate, the upper limit on the rate of
 change of the output. If the rate of change of voltage at the input signal is greater than the
 op amp slew rate, the output rate of change of voltage would be restricted to the slew rate,
-which causes distortion and an undesired increase in signal length. The expected input described above sees a rapid change of voltage with time and hence has high frequency components that would be seen from Fourier transforms. This leads one to immediately disregard some of the most common op amps such as the LM741 with a slew rate of 0.5 V /μs and a
+which causes distortion and an undesired increase in signal length. The expected input described above sees a rapid change of voltage with time, approximately 20 V/μs, and hence has high frequency components that would be seen from Fourier transforms. This leads one to immediately disregard some of the most common op amps such as the LM741 with a slew rate of 0.5 V/μs and a
 1.5 MHz bandwidth [^4]. The op amp of choice in this project is the LMH6611 with a 0.1-dB
-bandwidth of 45 MHz and a slew rate of 460 V /μs [^5]. This slew rate is sufficient for simulated pulse, yet may fall short when accepting the true diode signal which is currently unknown. Faster op amps such as
+bandwidth of 45 MHz and a slew rate of 460 V/μs [^5]. This slew rate is sufficient for simulated pulse, yet may fall short when accepting the true diode signal which is currently unknown. Faster op amps such as
 the OPA818 would excel, however their package form makes prototyping difficult, hence their
 omission [^6].
 
