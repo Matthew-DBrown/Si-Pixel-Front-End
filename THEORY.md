@@ -55,6 +55,14 @@ bandwidth of 45 MHz and a slew rate of 460 V/μs [^5]. This slew rate is suffici
 the OPA818 would excel, however their package form makes prototyping difficult, hence their
 omission [^6].
 
+Pulse shaping circuits typically include multiple RC or CR sections, each contributing to
+alter the decay and rise times of the output. Each section can load the next if not separated by a
+buffer [^7]. Op amps may be used as buffers in the source follower configuration,
+however these can introduce distortion and hence noise on the output, especially if they are not
+unity gain stable [^8]. It is therefore proposed that dedicated buffers are used instead, again
+with sufficiently large bandwidth and slew rate. Exceeding this criteria is the BUF602, with a
+1 GHz bandwidth and an exceptionally high slew rate of 8000 V/μs [^9].
+
 ## Footnotes
 [^1]: Knoll GF. Radiation detection and measurement. John Wiley & Sons; 2010.
 
@@ -71,3 +79,10 @@ Mar. 2024). Available from: https://www.ti.com/product/LM741.
 
 [^6]: OPA818 data sheet, product information and support | TI.com; 2024. (Online; accessed
 14. Mar. 2024). Available from: https://www.ti.com/product/OPA818.
+
+[^7]: Mancini R. Op amps for everyone: design reference. Newnes; 2003.
+
+[^8]: Carter B. Op amps for everyone / Bruce Carter, Ron Mancini. Fifth edition. ed.; 2018.
+
+[^9]: BUF602 data sheet, product information and support | TI.com; 2024. [Online; accessed
+14. Mar. 2024]. Available from: https://www.ti.com/product/BUF602.
