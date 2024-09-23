@@ -91,7 +91,28 @@ in pulse height, increasing later amplification requirements.
 
 ## Inversion and Offset Removal
 
+Since the integrator at the first stage is inverting, this must be corrected by an inverting op-
+amp. Its optimum placement is at the end of the pulse shaping circuit, for best signal output,
+since the frequency response of the LMH6611 diminishes with increasing closed-loop gain [^5].
+After passing through multiple low-pass filters, the main frequency composition will now be on
+the order of hundreds of kHz to MHz, as illustrated below.
 
+| ![Frequency spectrum of the signal after four RC filters.](./Images/.png) |
+|:--:| 
+| Frequency spectrum of the signal after four RC filters. |
+
+
+In an inverting configuration, the LMH6611 has a 0-dB bandwidth around 100 MHz for closed loop gains between -2 and -5.
+The output signal from the low-pass filters is therefore comfortably within the frequency range
+for well-behaved amplification; this would not be true for the signal before the RC filters.
+The figure below illustrates an accumulating offset at the output. A summing amplifier is therefore to be introduced after the inverter to
+remove any final offsets. The likelihood is that the offset seen in a realised circuit would be
+different to that simulated, and hence the choice of resistor values for the summing amplifier
+would be based on empirical observations.
+
+| ![Demonstration of offset removal of the output pulse using a summing amplifier.](./Images/final_output.png) |
+|:--:| 
+| Final output after inversion and offset removal. |
 
 ## Footnotes
 
@@ -103,3 +124,7 @@ Business Media; 2006.
 [^3]: Knoll GF. Radiation detection and measurement. John Wiley & Sons; 2010.
 
 [^4]: Spieler H. Semiconductor detector systems. vol. 12. Oxford university press; 2005.
+
+[^5]: Instruments T. LMH6611/LMH6612 Single Supply 345 MHz Rail-to-Rail Output Am-
+plifiers; 2013. Available from: https://www.ti.com/lit/ds/symlink/lmh6611.pdf?ts=
+1710012404970.
