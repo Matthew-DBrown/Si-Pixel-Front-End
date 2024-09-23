@@ -97,7 +97,7 @@ since the frequency response of the LMH6611 diminishes with increasing closed-lo
 After passing through multiple low-pass filters, the main frequency composition will now be on
 the order of hundreds of kHz to MHz, as illustrated below.
 
-| ![Frequency spectrum of the signal after four RC filters.](./Images/.png) |
+| ![Frequency spectrum of the signal after four RC filters.](./Images/frequency_spec_rc42.png) |
 |:--:| 
 | Frequency spectrum of the signal after four RC filters. |
 
