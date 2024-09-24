@@ -114,6 +114,8 @@ would be based on empirical observations.
 |:--:| 
 | Final output after inversion and offset removal. |
 
+## Full Design
+
 Below is the full design brining together the components discussed above.
 
 | ![Full front-end design schematic from KiCad](./Images/design_full_new.png) |
