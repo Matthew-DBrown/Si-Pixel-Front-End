@@ -114,6 +114,12 @@ would be based on empirical observations.
 |:--:| 
 | Final output after inversion and offset removal. |
 
+Below is the full design brining together the components discussed above.
+
+| ![Full front-end design schematic from KiCad](./Images/design_full_new.png) |
+|:--:| 
+| Full design with four low-pass filters (RC-4), followed by an inverting amplifier with a gain of four, and a summing amplifier at the end to remove offset accumulation. Practical adjustments to the integrator include the parallel discharge resistor and non-inverting input resistance to reduce the output voltage offset [^6]. |
+
 ## Footnotes
 
 [^1]: Shenkman AL. Transient analysis of electric power circuits handbook. Springer Science &
@@ -128,3 +134,6 @@ Business Media; 2006.
 [^5]: Instruments T. LMH6611/LMH6612 Single Supply 345 MHz Rail-to-Rail Output Am-
 plifiers; 2013. Available from: https://www.ti.com/lit/ds/symlink/lmh6611.pdf?ts=
 1710012404970.
+
+[^6]: Sedra AS, Smith KC. Microelectronic Circuits. 5th ed. Oxford University Press, Inc., New
+York; 2004.
